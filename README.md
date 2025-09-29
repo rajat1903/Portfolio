@@ -1,5 +1,7 @@
 ## Portfolio (Next.js)
 
+[![vercel deploy](https://img.shields.io/website?url=https%3A%2F%2Fportfolio-6gmt.vercel.app&label=vercel%20deploy&logo=vercel)](https://portfolio-6gmt.vercel.app)
+
 This is a personal portfolio built with Next.js App Router, TypeScript, Tailwind CSS, and Vercel Analytics.
 
 ### Live Demo
