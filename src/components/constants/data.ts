@@ -16,6 +16,7 @@ export const ABOUT_ME = {
 export const USER_NAMES = {
   githubUsername: "rajat1903",
   leetcodeUsername: "user-null", // remove or keep blank if you don't have a LeetCode profile
+  hashnodeUsername: "", // remove or keep blank if you don't have a Hashnode profile
 };
 
 export const SOCIAL_LINKS = {
@@ -24,16 +25,16 @@ export const SOCIAL_LINKS = {
   twitter: "https://x.com/rajatd01",
   leetcode: "https://leetcode.com/u/user-null/",
   // remove or keep blank if you don't have a Peerlist profile
-  // peerlist: "",
+  peerlist: "",
   instagram: "https://instagram.com/__rajat.1903__",
   email: "mailto:rajatdeshmukh66@gmail.com",
  // remove if you don't have a blog
-  // blog: "",
+  blog: "",
   resume: "https://drive.google.com/file/d/1xgCtyl-uA_IuvOS5gxccH-vIwwFTGrdk/view?usp=drive_link",
 };
 
 // Contact form endpoint (update with your own Formspree endpoint)
-// export const FORM_ENDPOINT = "";
+export const FORM_ENDPOINT = "";
 
 export const SKILLS = { // Keep only the skills you want to showcase and remove the rest
   frontend: [
@@ -81,7 +82,17 @@ export const PROJECTS = [
   // Add more projects as needed
 ];
 
-export const EXPERIENCE = [];
+export type ExperienceItem = {
+  company: string;
+  companyLink?: string;
+  role: string;
+  period: string;
+  location: string;
+  description: string;
+  skills: string[];
+};
+
+export const EXPERIENCE: ExperienceItem[] = [];
 
 export const EDUCATION = [
   {
