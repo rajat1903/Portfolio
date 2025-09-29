@@ -4,7 +4,7 @@ This is a personal portfolio built with Next.js App Router, TypeScript, Tailwind
 
 ### Live Demo
 
-- Deployed on Vercel: [Pending deployment]
+- Deployed on Vercel: [portfolio-6gmt.vercel.app](https://portfolio-6gmt.vercel.app)
 
 ### Tech Stack
 
