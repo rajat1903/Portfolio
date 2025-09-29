@@ -155,9 +155,9 @@ const BlogSection = () => {
                   {blog.brief}
                 </p>
                 <div className="flex justify-between items-center">
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground" suppressHydrationWarning>
                     <span>
-                      {new Date(blog.publishedAt).toLocaleDateString()}
+                      {new Date(blog.publishedAt).toLocaleDateString("en-GB", { timeZone: "UTC" })}
                     </span>
                     <span>•</span>
                     <span>{blog.readTimeInMinutes} min read</span>

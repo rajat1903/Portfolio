@@ -2,35 +2,32 @@
 // Update the values to personalize your portfolio.
 
 export const ABOUT_ME = {
-  name: "Your Name",
+  name: "Rajat Deshmukh",
   title: "Software Developer",
-  location: "Your Location",
-  email: "your.email@example.com",
+  location: "Indore, India",
+  email: "rajatdeshmukh66@gmail.com",
   description: [
-    "Write a short introduction about yourself!",
-    "Mention your interests, what you love to build, or your coding journey.",
-    "You can add more lines or remove these as you like.",
+     "Passionate software developer with a solid foundation in Python, Java, and MySQL. Skilled in building projects using frameworks such as Django and Spring Boot. Quick learner with strong problem-solving abilities and a continuous drive to expand technical expertise. Collaborative team player experienced in working on group projects and delivering quality solutions. Eager to contribute technical skills, adaptability, and enthusiasm to a software development role and support organizational success."
   ],
-  profileImage: "/profile-image.webp", // Replace with your profile image
-  profileGif: "/profile-gif.gif", // Replace with your personalised gif
+  profileImage: "/download.gif", // Replace with your profile image
+  profileGif: "/giphy.gif", // Replace with your personalised gif
 };
 
 export const USER_NAMES = {
-  githubUsername: "your-github-username",
-  leetcodeUsername: "your-leetcode-username", // remove or keep blank if you don't have a LeetCode profile
-  hashnodeUsername: "your-hashnode-username", // remove or keep blank if you don't have a Hashnode profile
+  githubUsername: "rajat1903",
+  leetcodeUsername: "user-null", // remove or keep blank if you don't have a LeetCode profile
 };
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/your-github-username",
-  linkedin: "https://linkedin.com/in/your-linkedin",
-  twitter: "https://twitter.com/your-twitter",
-  leetcode: "https://leetcode.com/your-leetcode",
-  peerlist: "https://peerlist.io/your-peerlist", // remove or keep blank if you don't have a Peerlist profile
-  instagram: "https://instagram.com/your-instagram",
-  email: "mailto:your.email@example.com",
-  blog: "https://yourblog.com", // remove if you don't have a blog
-  resume: "https://your-resume-drive-link.com",
+  github: "https://github.com/rajat1903",
+  linkedin: "https://www.linkedin.com/in/rajat-deshmukh-264666280/",
+  twitter: "https://x.com/rajatd01",
+  leetcode: "https://leetcode.com/u/user-null/",
+  // remove or keep blank if you don't have a Peerlist profile
+  instagram: "https://instagram.com/__rajat.1903__",
+  email: "mailto:rajatdeshmukh66@gmail.com",
+ // remove if you don't have a blog
+  resume: "https://drive.google.com/file/d/1xgCtyl-uA_IuvOS5gxccH-vIwwFTGrdk/view?usp=drive_link",
 };
 
 // Contact form endpoint (update with your own Formspree endpoint)
@@ -38,63 +35,59 @@ export const FORM_ENDPOINT = "https://formspree.io/f/your-form-id";
 
 export const SKILLS = { // Keep only the skills you want to showcase and remove the rest
   frontend: [
-    "HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Vue.js", "Angular", "Redux", "TailwindCSS", "Bootstrap", "Sass", "Less", "jQuery"
+    "HTML", "CSS", "JavaScript", "React"
   ],
   backend: [
-    "Node.js", "Express.js", "NestJS", "Django", "Flask", "Spring Boot", "Ruby on Rails", "Laravel", "ASP.NET", "FastAPI"
+    "Django", "Flask", "Spring Boot", "FastAPI"
   ],
   databases: [
-    "MongoDB", "MySQL", "PostgreSQL", "SQLite", "Redis", "Firebase", "Supabase"
+    "MongoDB", "MySQL", "PostgreSQL", "SQLite", "Supabase"
   ],
   languages: [
-    "C", "C++", "C#", "Java", "Python", "JavaScript", "TypeScript", "Go", "Rust", "Ruby", "PHP", "Kotlin", "Swift", "Dart", "Scala"
+    "C", "C++", "Java", "Python"
   ],
   cloudDevOps: [
-    "AWS", "Azure", "GCP", "Docker", "Kubernetes", "Vercel", "Netlify", "Heroku", "GitHub Actions", "Jenkins"
+    "AWS", "Docker", "Vercel", "Netlify"
   ],
   tools: [
-    "VS Code", "Git", "GitHub", "GitLab", "Bitbucket", "Postman", "Figma", "Vite", "Webpack", "Babel", "Jest", "Linux", "Windows", "MacOS"
+    "VS Code", "Git", "GitHub", "Postman"
   ],
 };
 
 export const PROJECTS = [
   {
-    name: "Project 1",
-    description: "Describe your project 1 here. Example: A web app for tracking habits.",
-    tech: ["React", "TypeScript"],
-    link: "https://yourproject1-link.com",
-    github: "https://github.com/yourusername/project1",
+    name: "AI Email Reply Generator",
+    description: "An AI-powered email reply generator that uses Artificial Intelligence to generate replies to emails.",
+    tech: ["React", "Spring Boot", "Gemini API"],
+    link: "https://email-reply-generator-online.netlify.app/",
+    github: "https://github.com/rajat1903/AI-Email-Reply-Generator-Online",
   },
   {
-    name: "Project 2",
-    description: "Describe your project 2 here. Example: An e-commerce site for books.",
-    tech: ["Next.js", "Tailwind CSS"],
-    link: "https://yourproject2-link.com",
-    github: "https://github.com/yourusername/project2",
+    name: "Shop Inventory Manager",
+    description: "A shop inventory manager that allows you to manage your shop inventory.",
+    tech: ["Python", "Tkinter", "MySQL"],
+    link: "https://github.com/rajat1903/Shop-Inventory-Manager",
+    github: "https://github.com/rajat1903/Shop-Inventory-Manager",
+  },
+  {
+    name: "Ecommerce Backend API",
+    description: "A ecommerce backend API that allows you to manage your ecommerce inventory.",
+    tech: ["Python", "Django", "SQLite"],
+    link: "https://github.com/rajat1903/Ecommerce-API",
+    github: "https://github.com/rajat1903/Ecommerce-API",
   },
   // Add more projects as needed
 ];
 
-export const EXPERIENCE = [
-  {
-    company: "Company Name",
-    companyLink: "https://companyname.com/",
-    role: "Software Developer",
-    period: "Jan 2025 - Present",
-    location: "Remote/Location",
-    description: "Describe your responsibilities and achievements.",
-    skills: ["React", "Node.js", "XXXX"],
-  },
-  // Add more experience as needed
-];
+export const EXPERIENCE = [];
 
 export const EDUCATION = [
   {
-    degree: "Your Degree (e.g., B.Tech. in Computer Science)",
-    institution: "Your University",
-    institutionLink: "https://youruniversity.com/",
-    period: "2020 - 2024",
-    score: "XX % or GPA",
+    degree: "Masters of Computer Application",
+    institution: "Rajiv Gandhi Proudyogiki Vishwavidyalaya",
+    institutionLink: "https://www.rgpv.ac.in/",
+    period: "2024 - 2026",
+    score: "7.8 GPA",
   },
   // Add more education as needed
 ];

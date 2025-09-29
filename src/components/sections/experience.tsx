@@ -3,6 +3,9 @@ import Link from "next/link";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 export default function Experience() {
+  if (!EXPERIENCE || EXPERIENCE.length === 0) {
+    return null;
+  }
   return (
     <section className="py-5">
       <h2 className="text-xl mb-4 font-semibold">work experience.</h2>

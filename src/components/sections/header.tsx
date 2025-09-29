@@ -61,6 +61,7 @@ const ProfileImage = ({ isHovering, setIsHovering }: ProfileImageProps) => (
     >
       {isHovering ? (
         <Image
+          key="gif"
           src={ABOUT_ME.profileGif}
           alt="Profile GIF"
           width={96}
@@ -70,6 +71,7 @@ const ProfileImage = ({ isHovering, setIsHovering }: ProfileImageProps) => (
         />
       ) : (
         <Image
+          key="static"
           src={ABOUT_ME.profileImage}
           alt={ABOUT_ME.name}
           width={96}
@@ -99,7 +101,7 @@ const VerifiedBadge = ({ showTooltip, setShowTooltip }: VerifiedBadgeProps) => (
 );
 
 const LocationTime = ({ currentTime }: LocationTimeProps) => (
-  <div className="hidden md:block text-base text-muted-foreground space-y-1 text-right">
+  <div className="hidden md:block text-base text-muted-foreground space-y-1 text-right" suppressHydrationWarning>
     <div className="flex items-center gap-2 justify-end">
       <FaLocationCrosshairs className="w-4 h-4" />
       <span className="font-mono">{ABOUT_ME.location}</span>

@@ -38,6 +38,15 @@ const useTheme = () => {
 // =============================================
 export default function Github() {
   const colorScheme = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <section className="py-5" id="github">

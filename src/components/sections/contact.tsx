@@ -151,12 +151,25 @@ const Contact = () => {
   const [status, setStatus] = useState<FormStatus>("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
 
+  const isConfigured = Boolean(
+    FORM_CONFIG.endpoint && !FORM_CONFIG.endpoint.includes("your-form-id")
+  );
+
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+    if (!isConfigured) {
+      // Simulate a successful submission even without a backend
+      setStatus("submitting");
+      setTimeout(() => {
+        setStatus("success");
+        setFormData(FORM_CONFIG.initialData);
+      }, 600);
+      return;
+    }
     submitForm(formData, setStatus, setErrorMessage, setFormData);
   };
 
@@ -170,6 +183,8 @@ const Contact = () => {
           discuss a project, or just want to say hi, feel free to reach out
           using the form below.
         </p>
+
+        {null}
 
         <form onSubmit={handleSubmit} className="space-y-4 p-2">
           {FORM_CONFIG.fields.map((field) =>
