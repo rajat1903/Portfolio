@@ -24,14 +24,16 @@ export const SOCIAL_LINKS = {
   twitter: "https://x.com/rajatd01",
   leetcode: "https://leetcode.com/u/user-null/",
   // remove or keep blank if you don't have a Peerlist profile
+  // peerlist: "",
   instagram: "https://instagram.com/__rajat.1903__",
   email: "mailto:rajatdeshmukh66@gmail.com",
  // remove if you don't have a blog
+  // blog: "",
   resume: "https://drive.google.com/file/d/1xgCtyl-uA_IuvOS5gxccH-vIwwFTGrdk/view?usp=drive_link",
 };
 
 // Contact form endpoint (update with your own Formspree endpoint)
-export const FORM_ENDPOINT = "https://formspree.io/f/your-form-id";
+// export const FORM_ENDPOINT = "";
 
 export const SKILLS = { // Keep only the skills you want to showcase and remove the rest
   frontend: [
